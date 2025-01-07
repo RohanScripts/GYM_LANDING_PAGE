@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+main{
+    width: 480px;
+    height: 100vh;
+    background-color: black;
+}
+
+nav{
+    height: 90px;
+}
+
+#home{
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+#logo{
+    span{
+        color: yellow;
+    }
+}
+
+#upper-home{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#bg-img img{
+    width: 100%;
+}
+
+#middle-home{
+    width: 100%;
+    position: relative;
+}
+
+#home-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+#lower-home{
+    background-color: black ;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    
+    button{
+        background-color: #FAFF00;
+        outline: none;
+        border: none;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top:1vh;
+        padding-bottom: 1vh;
+        border-radius: 30px;
+    }
+}
+
+#advantages{
+    color: white;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10vh;
+}
+
+#advantages-top{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding-bottom: 10vh;
+}
+
+.content{
+    display: flex;
+    gap: 2vw;
+    img{
+        width: 25%;
+        height: 25%;
+    }
+}
+
+.content-text{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    p{
+        font-size: small;
+        color: gainsboro;
+    }
+}
+
+#advantages-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#membership{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10vh;
+    color: white;
+    padding-top: 10vh;
+}
+
+#membership-top{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding-bottom: 10vh;
+}
+
+.card{
+    width: 80%;
+    background-color: #222222;
+    border-radius: 10px;
+    
+}
+
+.card-top{
+    font-size: 24px;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
+}
+
+#membership-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.tick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    img{
+        width: 10%;
+        height: 10%;
+    }
+
+    p{
+        font-size: 22px;
+        width: 300px;
+    }
+}
+
+.card-middle{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#about-top{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding-bottom: 10vh;
+}
+
+#about-us{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10vh;
+    color: white;
+    padding-top: 10vh;
+}
+
+#about-content{
+    width: 80%;
+}
+
+#about-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: gainsboro;
+    text-align: justify;
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 8vh;
+    color: white;
+    padding-top: 10vh;
+}
+
+#address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    h3{
+        font-size: 25px;
+    }
+    p{
+        color: gainsboro;
+        font-size: 22px;
+    }
+}
+
+#pGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#call, #mail{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#contact{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    h3{
+        font-size: 25px;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    p{
+        font-size: 19px;
+    }
+}
+
+#contact-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#social{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    main{
+        width: 100%;
+    }
+    #advantages-content{
+       display: grid;
+       grid-template-columns: auto auto;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    
+    main{
+        width: 100%;
+    }
+
+}
