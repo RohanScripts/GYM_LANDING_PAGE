@@ -1,0 +1,227 @@
+/* TABLET SCREEN */
+@media (min-width: 481px) and (max-width: 768px){
+    main{
+        /* width: 100%; */
+        min-width: 481px;
+        max-width: 768px;
+    }
+    .content-text{
+        width: 400px;
+
+    }
+    .content{
+        gap: 7vw;
+    }
+    #membership-content{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #upper-home{
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    #home-text{
+        color: white;
+        font-size: 7vw;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+    #lower-home{
+        background-color: black ;
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: start;
+        padding-left: 10vw;
+    }
+    #trainer-cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 7vw;
+    }
+    
+}
+
+/* LAPTOPS SCREENS*/
+@media (min-width: 769px) and (max-width: 1024px){
+    
+    main{
+        /* width: 100%; */
+        min-width: 769px;
+        max-width: 1024px;
+    }
+    #upper-home{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    #advantages-content{
+        display: grid;
+        grid-template-columns: auto auto; 
+        gap: 15vw;
+    }
+    #advantages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #membership-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5vw;
+    }
+    #membership{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 290px;
+    }
+    #trainer-cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 6vw;
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+    }
+}
+
+/* DESKTOP SCREENS */
+@media (min-width: 1025px) and (max-width: 1440px){
+    main{
+        /* width: 100%;
+        height: 100vh; */
+        min-width: 1025px;
+        max-width: 1440px;
+        background-color: black;
+    }
+    #home{
+        /* padding-left: 1vw;
+        padding-right: 1vw; */
+    }
+    #advantages-content{
+        display: grid;
+        grid-template-columns: auto auto; 
+        gap: 15vw;
+    }
+    #membership-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5vw;
+    }
+    #trainer-cards{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 4vw;
+    }
+    #home-text{
+        color: white;
+        font-size: 6vw;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+    }
+    #trainers{
+        h3{
+            font-size: 4vw;
+        }
+    }
+    #about-top{
+        font-size: 3vw;
+    }
+    #membership-top{
+        font-size: 3vw;
+    }
+    #advantages-top{
+        font-size: 3vw;
+    }
+    #address{
+        margin-top: 4vh;
+    }
+}
+
+/* LARGER DESKTOPS */
+@media (min-width: 1441px){
+    /* body{
+        min-width: 1441px;
+        max-width: 100%;
+    } */
+    main{
+        /* width: 100%; */
+        min-width: 1441px;
+        max-width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+
+    #advantages-content{
+        display: grid;
+        grid-template-columns: auto auto; 
+        gap: 15vw;
+    }
+    #membership-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5vw;
+    }
+    #trainer-cards{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 2vw;
+        
+    
+    }
+    #home-text{
+        color: white;
+        font-size: 6vw;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+    }
+    #trainers{
+        h3{
+            font-size: 4vw;
+        }
+    }
+    #about-top{
+        font-size: 3vw;
+    }
+    #membership-top{
+        font-size: 3vw;
+    }
+    #advantages-top{
+        font-size: 3vw;
+    }
+    #address{
+        margin-top: 4vh;
+    }
+    .card{
+        min-height: 400px;
+    }
+}

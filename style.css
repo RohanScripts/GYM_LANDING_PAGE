@@ -7,13 +7,13 @@
 html,body{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     background-color: black;
 }
 
 main{
-    width: 480px;
+    max-width: 480px;
     height: 100vh;
     background-color: black;
 }
@@ -23,7 +23,7 @@ nav{
 }
 
 #home{
-    width: 100%;
+    padding-top: 2vh;
     margin-bottom: 15vh;
 }
 
@@ -36,12 +36,13 @@ nav{
 #upper-home{
     display: flex;
     justify-content: space-between;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #bg-img img{
     width: 100%;
+    /* object-fit: cover; */
 }
 
 #middle-home{
@@ -50,6 +51,9 @@ nav{
 }
 
 #home-text{
+    color: white;
+    font-size: 6vw;
+    font-weight: 700;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,6 +128,10 @@ nav{
     padding-bottom: 10vh;
     color: white;
     padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #membership-top{
@@ -134,10 +142,10 @@ nav{
 }
 
 .card{
-    width: 80%;
+    min-height: 350px;
     background-color: #222222;
     border-radius: 10px;
-    
+    padding: 1vw;
 }
 
 .card-top{
@@ -208,6 +216,59 @@ nav{
     font-size: 22px;
     color: gainsboro;
     text-align: justify;
+}
+
+#trainers{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10vh;
+    color: white;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    h3{
+        font-size: 8vw;
+    }
+    
+}
+
+#trainer-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.Tcard{
+    background-color: #222222;
+    padding: 2vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.Tcard-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    p{
+        font-size: large;
+        font-weight: 800;
+    }
+}
+
+.trainers-social{
+    display: flex;
+    gap: 3vw;
 }
 
 #footer{
@@ -283,21 +344,3 @@ nav{
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px){
-    main{
-        width: 100%;
-    }
-    #advantages-content{
-       display: grid;
-       grid-template-columns: auto auto;
-    }
-    
-}
-
-@media (min-width: 769px) and (max-width: 1024px){
-    
-    main{
-        width: 100%;
-    }
-
-}
