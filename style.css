@@ -1,346 +1,389 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
-    /* display: flex;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
     justify-content: center; */
-    background-color: black;
+  background-color: black;
+  font-family: "MADEOuterSans", sans-serif;
 }
 
-main{
-    max-width: 480px;
-    height: 100vh;
-    background-color: black;
+@font-face {
+  font-family: "MADEOuterSans";
+  src: url("./assets/font/MADE\ Outer\ Sans\ Alt\ Black\ PERSONAL\ USE.otf");
+  font-weight: bold;
 }
 
-nav{
-    height: 90px;
+main {
+  max-width: 480px;
+  height: 100vh;
+  background-color: black;
 }
 
-#home{
-    padding-top: 2vh;
-    margin-bottom: 15vh;
+nav {
+  height: 60px;
 }
 
-#logo{
-    span{
-        color: yellow;
-    }
+#home {
+  padding-top: 2vh;
+  padding-left: 53px;
+  padding-right: 53px;
+  margin-bottom: 15vh;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 408px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
-#upper-home{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5vw;
-    padding-right: 5vw;
+#logo {
+  span {
+    color: yellow;
+  }
 }
 
-#bg-img img{
-    width: 100%;
-    /* object-fit: cover; */
+#upper-home {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-#middle-home{
-    width: 100%;
-    position: relative;
+#middle-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#home-text{
-    color: white;
-    font-size: 6vw;
-    font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
+#home-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
 }
 
-#lower-home{
-    background-color: black ;
-    width: 100%;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    
-    button{
-        background-color: #FAFF00;
-        outline: none;
-        border: none;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-top:1vh;
-        padding-bottom: 1vh;
-        border-radius: 30px;
-    }
+#lower-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    width: 177px;
+    height: 52px;
+    background-color: #faff00;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+  }
 }
 
-#advantages{
-    color: white;
-    width: 100%;
-    background-color: black;
-    padding-bottom: 10vh;
+#advantages {
+  color: white;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 10vh;
 }
 
-#advantages-top{
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    padding-bottom: 10vh;
+#advantages-top {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  padding-bottom: 10vh;
 }
 
-.content{
-    display: flex;
-    gap: 2vw;
-    img{
-        width: 25%;
-        height: 25%;
-    }
+.content {
+  display: flex;
+  gap: 21px;
+  img {
+    width: 25%;
+    height: 25%;
+  }
 }
 
-.content-text{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    p{
-        font-size: small;
-        color: gainsboro;
-    }
-}
-
-#advantages-content{
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-    align-items: center;
-    justify-content: center;
-}
-
-#membership{
-    width: 100%;
-    background-color: black;
-    padding-bottom: 10vh;
-    color: white;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#membership-top{
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    padding-bottom: 10vh;
-}
-
-.card{
-    min-height: 350px;
-    background-color: #222222;
-    border-radius: 10px;
-    padding: 1vw;
-}
-
-.card-top{
-    font-size: 24px;
-    padding-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2vh;
-}
-
-#membership-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.tick{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    img{
-        width: 10%;
-        height: 10%;
-    }
-
-    p{
-        font-size: 22px;
-        width: 300px;
-    }
-}
-
-.card-middle{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-}
-
-#about-top{
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    padding-bottom: 10vh;
-}
-
-#about-us{
-    width: 100%;
-    background-color: black;
-    padding-bottom: 10vh;
-    color: white;
-    padding-top: 10vh;
-}
-
-#about-content{
-    width: 80%;
-}
-
-#about-bottom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
+.content-text {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  p {
+    font-size: small;
     color: gainsboro;
-    text-align: justify;
+    font-weight: 900;
+  }
 }
 
-#trainers{
-    width: 100%;
-    background-color: black;
-    padding-bottom: 10vh;
-    color: white;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 7vh;
-    h3{
-        font-size: 8vw;
-    }
-    
+#advantages-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
 }
 
-#trainer-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3vh;
+#membership {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 10vh;
+  color: white;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.Tcard{
-    background-color: #222222;
-    padding: 2vw;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vh;
+#membership-top {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  padding-bottom: 10vh;
 }
 
-.Tcard-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vh;
-    p{
-        font-size: large;
-        font-weight: 800;
-    }
+.card {
+  height: 397px;
+  background-color: #222222;
+  border-radius: 10px;
+  /* padding: 1vw; */
+  width: 275px;
 }
 
-.trainers-social{
-    display: flex;
-    gap: 3vw;
+.card-top {
+  font-size: 24px;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
 }
 
-#footer{
-    width: 100%;
-    background-color: black;
-    padding-bottom: 8vh;
-    color: white;
-    padding-top: 10vh;
+#membership-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
 }
 
-#address{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    h3{
-        font-size: 25px;
-    }
-    p{
-        color: gainsboro;
-        font-size: 22px;
-    }
+.tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+
+  img {
+    width: 10%;
+    height: 10%;
+  }
+
+  p {
+    font-size: 14px;
+    width: 300px;
+  }
 }
 
-#pGroup{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card-middle {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 23px;
+  padding-right: 12px;
+  gap: 1.5vh;
 }
 
-#call, #mail{
-    display: flex;
-    justify-content: center;
-    gap: 1vw;
+.card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+  button {
+    width: 107px;
+    height: 30px;
+    background-color: #faff00;
+    border-radius: 30px;
+    border: none;
+  }
 }
 
-#contact{
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    h3{
-        font-size: 25px;
-    }
-    img{
-        width: 30px;
-        height: 30px;
-    }
-    p{
-        font-size: 19px;
-    }
+#about-top {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  padding-bottom: 10vh;
 }
 
-#contact-group{
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
+#about-us {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 10vh;
+  color: white;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
-#social{
-    padding-top: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    img{
-        width: 50px;
-        height: 50px;
-    }
+#about-content {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
+#about-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gainsboro;
+  text-align: center;
+  width: 280px;
+  height: 100%;
+}
+
+#trainers {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 10vh;
+  color: white;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7vh;
+  h3 {
+    font-size: 8vw;
+  }
+}
+
+#trainer-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+#hr {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.Tcard {
+  background-color: #222222;
+  padding: 2vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  width: 275px;
+  height: 448px;
+}
+
+.Tcard-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  p {
+    font-size: large;
+    font-weight: 800;
+  }
+}
+
+.trainers-social {
+  display: flex;
+  gap: 3vw;
+}
+
+#footer {
+  width: 100%;
+  background-color: black;
+  padding-bottom: 8vh;
+  color: white;
+  padding-top: 10vh;
+}
+
+#address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    color: gainsboro;
+    font-size: 22px;
+  }
+}
+
+#pGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#call,
+#mail {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+#contact {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  h3 {
+    font-size: 25px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  p {
+    font-size: 19px;
+  }
+}
+
+#contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#social {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
