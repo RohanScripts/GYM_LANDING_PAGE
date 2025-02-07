@@ -1,7 +1,7 @@
 /* TABLET SCREEN */
-@media (min-width: 481px) and (max-width: 768px){
+/*@media (min-width: 481px) and (max-width: 768px){
     main{
-        /* width: 100%; */
+        /~ width: 100%; ~/
         min-width: 481px;
         max-width: 768px;
     }
@@ -42,186 +42,218 @@
         gap: 7vw;
     }
     
-}
+}*/
 
 /* LAPTOPS SCREENS*/
-@media (min-width: 769px) and (max-width: 1024px){
-    
-    main{
-        /* width: 100%; */
-        min-width: 769px;
-        max-width: 1024px;
+@media (min-width: 744px) and (max-width: 1000px) {
+  #home {
+    background-image: url("./assets/background2.png");
+    display: flex;
+    justify-content: space-between;
+    height: 604px;
+    position: relative;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    gap: 75px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 12px;
     }
-    #upper-home{
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-    #advantages-content{
-        display: grid;
-        grid-template-columns: auto auto; 
-        gap: 15vw;
-    }
-    #advantages{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #membership-content{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 5vw;
-    }
-    #membership{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card{
-        width: 290px;
-    }
-    #trainer-cards{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 6vw;
-    }
-    #footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6vw;
-    }
+  }
+
+  #home-text {
+    text-align: left;
+  }
+
+  #middle-home {
+    max-width: 60%;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px;
+  }
+
+  main {
+    /* width: 100%; */
+    min-width: 744px;
+    max-width: 1000px;
+  }
+  #upper-home {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #advantages-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15vw;
+  }
+  #advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #membership-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+  }
+  #membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 290px;
+  }
+  #trainer-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6vw;
+  }
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+  }
 }
 
 /* DESKTOP SCREENS */
-@media (min-width: 1025px) and (max-width: 1440px){
-    main{
-        /* width: 100%;
+@media (min-width: 1025px) and (max-width: 1440px) {
+  main {
+    /* width: 100%;
         height: 100vh; */
-        min-width: 1025px;
-        max-width: 1440px;
-        background-color: black;
-    }
-    #home{
-        /* padding-left: 1vw;
+    min-width: 1025px;
+    max-width: 1440px;
+    background-color: black;
+  }
+  #home {
+    /* padding-left: 1vw;
         padding-right: 1vw; */
+  }
+  #advantages-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15vw;
+  }
+  #membership-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+  }
+  #trainer-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4vw;
+  }
+  #home-text {
+    color: white;
+    font-size: 6vw;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+  }
+  #trainers {
+    h3 {
+      font-size: 4vw;
     }
-    #advantages-content{
-        display: grid;
-        grid-template-columns: auto auto; 
-        gap: 15vw;
-    }
-    #membership-content{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 5vw;
-    }
-    #trainer-cards{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        gap: 4vw;
-    }
-    #home-text{
-        color: white;
-        font-size: 6vw;
-        font-weight: 700;
-        position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%,-50%);
-        
-    }
-    #footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6vw;
-    }
-    #trainers{
-        h3{
-            font-size: 4vw;
-        }
-    }
-    #about-top{
-        font-size: 3vw;
-    }
-    #membership-top{
-        font-size: 3vw;
-    }
-    #advantages-top{
-        font-size: 3vw;
-    }
-    #address{
-        margin-top: 4vh;
-    }
+  }
+  #about-top {
+    font-size: 3vw;
+  }
+  #membership-top {
+    font-size: 3vw;
+  }
+  #advantages-top {
+    font-size: 3vw;
+  }
+  #address {
+    margin-top: 4vh;
+  }
 }
 
 /* LARGER DESKTOPS */
-@media (min-width: 1441px){
-    /* body{
+@media (min-width: 1441px) {
+  /* body{
         min-width: 1441px;
         max-width: 100%;
     } */
-    main{
-        /* width: 100%; */
-        min-width: 1441px;
-        max-width: 100%;
-        height: 100vh;
-        background-color: black;
-    }
+  main {
+    /* width: 100%; */
+    min-width: 1441px;
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
 
-    #advantages-content{
-        display: grid;
-        grid-template-columns: auto auto; 
-        gap: 15vw;
+  #advantages-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15vw;
+  }
+  #membership-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+  }
+  #trainer-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2vw;
+  }
+  #home-text {
+    color: white;
+    font-size: 6vw;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+  }
+  #trainers {
+    h3 {
+      font-size: 4vw;
     }
-    #membership-content{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 5vw;
-    }
-    #trainer-cards{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        gap: 2vw;
-        
-    
-    }
-    #home-text{
-        color: white;
-        font-size: 6vw;
-        font-weight: 700;
-        position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%,-50%);
-        
-    }
-    #footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6vw;
-    }
-    #trainers{
-        h3{
-            font-size: 4vw;
-        }
-    }
-    #about-top{
-        font-size: 3vw;
-    }
-    #membership-top{
-        font-size: 3vw;
-    }
-    #advantages-top{
-        font-size: 3vw;
-    }
-    #address{
-        margin-top: 4vh;
-    }
-    .card{
-        min-height: 400px;
-    }
+  }
+  #about-top {
+    font-size: 3vw;
+  }
+  #membership-top {
+    font-size: 3vw;
+  }
+  #advantages-top {
+    font-size: 3vw;
+  }
+  #address {
+    margin-top: 4vh;
+  }
+  .card {
+    min-height: 400px;
+  }
 }
