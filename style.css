@@ -56,8 +56,6 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
 
 #middle-home {
@@ -158,7 +156,10 @@ nav {
   background-color: #222222;
   border-radius: 10px;
   /* padding: 1vw; */
-  width: 275px;
+  min-width: 275px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: 0.5s;
 }
 
 .card-top {
@@ -169,14 +170,20 @@ nav {
   justify-content: center;
   align-items: center;
   padding-bottom: 2vh;
+  transition: 0.5s;
 }
 
 #membership-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
   gap: 2vh;
+  overflow-x: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+#membership-content::-webkit-scrollbar {
+  display: none;
 }
 
 .tick {
@@ -186,14 +193,18 @@ nav {
   gap: 1vw;
 
   img {
-    width: 10%;
-    height: 10%;
+    width: 20px;
+    height: 20px;
   }
 
   p {
     font-size: 14px;
     width: 300px;
   }
+}
+
+#yellow-tick {
+  display: none;
 }
 
 .card-middle {
@@ -206,11 +217,18 @@ nav {
   gap: 1.5vh;
 }
 
+.card-second-half {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
 .card-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 34px;
+  padding-bottom: 2vh;
   button {
     width: 107px;
     height: 30px;
@@ -237,6 +255,8 @@ nav {
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
+  height: auto;
+  padding-bottom: 200px;
 }
 
 #about-content {
@@ -255,6 +275,27 @@ nav {
   height: 100%;
 }
 
+.about-slider {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.about-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  img {
+    width: 279px;
+    height: 211px;
+  }
+}
+
 #trainers {
   width: 100%;
   background-color: black;
@@ -271,12 +312,29 @@ nav {
   }
 }
 
+#yellow-insta {
+  display: none;
+}
+
+#yellow-twitter {
+  display: none;
+}
+
+#yellow-yt {
+  display: none;
+}
+
 #trainer-cards {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3vh;
+  width: 100%;
+  gap: 2vh;
+  overflow-x: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+#trainer-cards::-webkit-scrollbar {
+  display: none;
 }
 
 #hr {
@@ -295,6 +353,8 @@ nav {
   gap: 1vh;
   width: 275px;
   height: 448px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .Tcard-bottom {
@@ -377,13 +437,102 @@ nav {
 }
 
 #social {
-  padding-top: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#footer-social-container {
+  margin-top: 5vh;
+  display: flex;
   gap: 2vw;
-  img {
-    width: 50px;
-    height: 50px;
-  }
+}
+
+.card:hover {
+  border: 1px solid #faff00;
+}
+
+.card:hover .card-top {
+  background-color: #faff00;
+  color: black;
+}
+
+.card:hover #yellow-tick {
+  display: block;
+}
+
+.card:hover #normal-tick {
+  display: none;
+}
+
+#insta-div:hover #normal-insta {
+  display: none;
+}
+
+#insta-div:hover #yellow-insta {
+  display: block;
+}
+
+#twitter-div:hover #normal-twitter {
+  display: none;
+}
+
+#twitter-div:hover #yellow-twitter {
+  display: block;
+}
+
+#yt-div:hover #normal-yt {
+  display: none;
+}
+
+#yt-div:hover #yellow-yt {
+  display: block;
+}
+
+#footer-yellow-yt {
+  display: none;
+}
+
+#footer-yellow-twitter {
+  display: none;
+}
+
+#footer-yellow-insta {
+  display: none;
+}
+
+#footer-yellow-fb {
+  display: none;
+}
+
+#footer-yt-div:hover #footer-normal-yt {
+  display: none;
+}
+
+#footer-yt-div:hover #footer-yellow-yt {
+  display: block;
+}
+
+#footer-twitter-div:hover #footer-normal-twitter {
+  display: none;
+}
+
+#footer-twitter-div:hover #footer-yellow-twitter {
+  display: block;
+}
+
+#footer-insta-div:hover #footer-normal-insta {
+  display: none;
+}
+
+#footer-insta-div:hover #footer-yellow-insta {
+  display: block;
+}
+
+#footer-fb-div:hover #footer-normal-fb {
+  display: none;
+}
+
+#footer-fb-div:hover #footer-yellow-fb {
+  display: block;
 }
