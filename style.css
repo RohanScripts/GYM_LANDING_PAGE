@@ -293,6 +293,10 @@ nav {
   display: none;
 }
 
+#carousel-container {
+  display: none;
+}
+
 .about-slider {
   padding-top: 60px;
   width: 100%;

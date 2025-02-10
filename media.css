@@ -1,49 +1,3 @@
-/* TABLET SCREEN */
-/*@media (min-width: 481px) and (max-width: 768px){
-    main{
-        /~ width: 100%; ~/
-        min-width: 481px;
-        max-width: 768px;
-    }
-    .content-text{
-        width: 400px;
-
-    }
-    .content{
-        gap: 7vw;
-    }
-    #membership-content{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    #upper-home{
-        padding-left: 7vw;
-        padding-right: 7vw;
-    }
-    #home-text{
-        color: white;
-        font-size: 7vw;
-        font-weight: 700;
-        position: absolute;
-        top: 50%;
-        left: 30%;
-    }
-    #lower-home{
-        background-color: black ;
-        width: 100%;
-        height: 55px;
-        display: flex;
-        justify-content: start;
-        padding-left: 10vw;
-    }
-    #trainer-cards{
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 7vw;
-    }
-    
-}*/
-
 /* LAPTOPS SCREENS*/
 @media (min-width: 744px) and (max-width: 1000px) {
   #home {
@@ -141,6 +95,7 @@
   #membership-content {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
     gap: 34px;
     padding-left: 80px;
     padding-right: 80px;
@@ -182,6 +137,10 @@
 
   #about-bottom {
     width: 472px;
+  }
+
+  #carousel-container {
+    display: none;
   }
 
   #about-middle-para {
@@ -274,11 +233,11 @@
 }
 
 /* DESKTOP SCREENS */
-@media (min-width: 1000px) and (max-width: 1600px) {
+@media (min-width: 1001px) and (max-width: 1600px) {
   main {
     /* width: 100%;
         height: 100vh; */
-    min-width: 1000px;
+    min-width: 1001px;
     max-width: 1600px;
     background-color: black;
   }
@@ -361,10 +320,83 @@
   #membership-content {
     display: grid;
     grid-template-columns: auto auto auto;
+
     gap: 56px;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  #about-top {
+    display: flex;
+    justify-content: start;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    h3 {
+      font-size: 48px;
+    }
+  }
+
+  #about-bottom {
+    width: 100%;
+    display: flex;
+    gap: 66px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+
+  #about-content {
+    width: 472px;
+    p {
+      text-align: start;
+    }
+  }
+
+  #about-middle-para {
+    display: block;
+  }
+
+  .about-slider {
+    display: none;
+  }
+
+  #carousel-container {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  #carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    border-radius: 10px;
+    width: 403px;
+    scroll-behavior: smooth;
+  }
+
+  #carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-image {
+    img {
+      width: 403px;
+      height: 305px;
+    }
+  }
+
+  #carousel-navigator-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .carousel-navigator {
+    width: 40px;
+    height: 2px;
+    background-color: white;
   }
 
   .card {
@@ -375,6 +407,7 @@
     overflow-x: hidden;
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-content: center;
     padding-left: 29px;
     padding-right: 29px;
     gap: 58px;
@@ -516,7 +549,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 56px;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 318px;
     padding-right: 318px;
   }
@@ -525,27 +558,83 @@
     width: 275px;
   }
 
-  #about-us {
-    padding-left: 220px;
-    padding-right: 220px;
-  }
-
   #about-top {
+    display: flex;
+    justify-content: start;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
     h3 {
       font-size: 48px;
     }
   }
 
-  .trainer-heading {
-    h3 {
-      font-size: 48px;
+  #about-bottom {
+    width: 100%;
+    display: flex;
+    gap: 66px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+
+  #about-content {
+    width: 472px;
+    p {
+      text-align: start;
     }
+  }
+
+  #about-middle-para {
+    display: block;
+  }
+
+  .about-slider {
+    display: none;
+  }
+
+  #carousel-container {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  #carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    border-radius: 10px;
+    width: 403px;
+    scroll-behavior: smooth;
+  }
+
+  #carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-image {
+    img {
+      width: 403px;
+      height: 305px;
+    }
+  }
+
+  #carousel-navigator-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .carousel-navigator {
+    width: 40px;
+    height: 2px;
+    background-color: white;
   }
 
   #trainer-cards {
     overflow-x: hidden;
     display: grid;
     grid-template-columns: auto auto auto auto;
+    justify-content: center;
     padding-left: 220px;
     padding-right: 220px;
     gap: 20px;
