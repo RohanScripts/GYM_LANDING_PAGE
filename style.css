@@ -255,15 +255,14 @@ nav {
 #about-us {
   width: 100%;
   background-color: black;
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
   color: white;
-  padding-top: 10vh;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
   height: auto;
-  padding-bottom: 200px;
 }
 
 #about-middle-para {
@@ -335,9 +334,9 @@ nav {
 #trainers {
   width: 100%;
   background-color: black;
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
   color: white;
-  padding-top: 10vh;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
