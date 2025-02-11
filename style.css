@@ -246,8 +246,10 @@ nav {
 #about-top {
   display: flex;
   justify-content: center;
-  font-size: 28px;
   padding-bottom: 10vh;
+  h3 {
+    font-size: 28px;
+  }
 }
 
 #about-us {
@@ -318,6 +320,18 @@ nav {
   }
 }
 
+#membership-top {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+.trainer-heading {
+  h3 {
+    font-size: 28px;
+  }
+}
+
 #trainers {
   width: 100%;
   background-color: black;
@@ -329,9 +343,6 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 7vh;
-  h3 {
-    font-size: 28px;
-  }
 }
 
 #yellow-insta {
