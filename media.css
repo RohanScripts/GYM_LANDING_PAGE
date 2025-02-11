@@ -329,7 +329,7 @@
 
   #about-top {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
@@ -560,7 +560,7 @@
 
   #about-top {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
@@ -603,7 +603,7 @@
     display: flex;
     overflow-x: auto;
     border-radius: 10px;
-    width: 403px;
+    width: 570px;
     scroll-behavior: smooth;
   }
 
@@ -613,8 +613,8 @@
 
   .carousel-image {
     img {
-      width: 403px;
-      height: 305px;
+      width: 570px;
+      height: 454px;
     }
   }
 
